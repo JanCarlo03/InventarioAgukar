@@ -1,0 +1,31 @@
+<div class="dashboard-cointainer">
+    <mat-toolbar color="primary">
+        <button mat-icon-button ><mat-icon>menu</mat-icon></button>
+        <h1 class="app-name">Grupo IIS</h1>
+
+        <div fxFlex fxLAyout="row" fxLayoutAlign="flex-end">
+            <ul fxLayout="row" fxLayoutGap="20px">
+                <li>
+                    <button mat-icon-button>
+                        <mat-icon>help-outline</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-button [matMenuTriggerFor]="menu">
+                        <mat-icon>person_outline</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <mat-icon>exit_to_app</mat-icon>
+                            Cerrar sesión
+                        </button>
+                    </mat-menu>
+                </li>
+            </ul>
+        </div>
+
+    </mat-toolbar>
+
+    <router-outlet></router-outlet>
+
+</div>
