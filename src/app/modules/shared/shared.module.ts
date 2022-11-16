@@ -11,14 +11,14 @@ import { RouterModule } from '@angular/router';
   declarations: [
     SidenavComponent
   ],
-  exports:[
+  exports: [
     SidenavComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     FlexLayoutModule,
-    MaterialModule,
+    MaterialModule
   ]
 })
 export class SharedModule { }
