@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoryComponent implements OnInit {
 
-  constructor() { }
+  constructor(private categoryService: CategoryComponent) { }
 
   ngOnInit(): void {
   }
-
+    
 }
